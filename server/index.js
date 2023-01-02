@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const multer = require("multer");
 const cors = require("cors");
-const port = 3000;
+const port = 5000;
 const fs = require("fs");
 const imageModel = require("./models");
 app.use(cors());
