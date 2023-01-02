@@ -38,6 +38,8 @@ const storage = multer.diskStorage({
 const upload = multer({ storage: storage });
 
 app.post("/", upload.single("testImage"), (req, res) => {
+  console.log("res has a file")
+  console.log(res.file)
   const saveImage =  imageModel({
     name: req.body.name,
     img: {
